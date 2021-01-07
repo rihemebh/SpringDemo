@@ -2,11 +2,12 @@ package com.example.demo;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class FriendlyGreeter implements GreetInterface{
+
+public class FriendlyGreeter extends GreetBase{
 
     @Override
     public String greet() {
-        return "Friendly greeter";
+        greetCount++;
+        return "Friendly greeter "+greetCount;
     }
 }
