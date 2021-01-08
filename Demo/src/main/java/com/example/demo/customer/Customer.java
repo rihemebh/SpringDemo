@@ -1,11 +1,11 @@
-package com.example.demo;
+package com.example.demo.customer;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Costumer {
+public class Customer {
     @Id
     @GeneratedValue
     private Long id;

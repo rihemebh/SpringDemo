@@ -1,7 +1,8 @@
 package com.example.demo;
 
+import com.example.demo.customer.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
     /* spring can resolve which concrete class to implement from the var name that should be :
@@ -25,7 +26,7 @@ public class RestController {
 //    public String Friendly1(){ return friendlyGreeter.greet(); }
 
 @Autowired
-    private CostumerRepository repo;
+    private CustomerRepository repo;
 
 
 }
